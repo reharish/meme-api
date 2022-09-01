@@ -1,4 +1,4 @@
 # meme-api
 
-## start
+## To Run
 * `docker-compose up`
