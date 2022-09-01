@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeMe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 600px;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <center class="center-fit">
+    <h1>==== meme EveryWhere ====</h1>
+<br>
+    <p><b>Author</b>: {{meme_author}}</p>
+    <p><b>Subreddit</b>: {{subreddit}}</p>
+    <br>
+    <p><img class="imgbox" src="{{meme_pic}}"></p>
+
+<br>
+    <h2>{{meme_title}}</h2>
+</center>
+</body>
+
+</html>
