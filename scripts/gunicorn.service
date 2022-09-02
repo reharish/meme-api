@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve flask application
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/var/www/meme-api/
+Environment="PATH==/var/www/meme-api/meme-api-env/bin"
+ExecStart=/usr/bin/python3 /usr/local/bin/gunicorn app:app -c /var/www/meme-api/gunicorn_config.py
+
+[Install]
+WantedBy=multi-user.target
